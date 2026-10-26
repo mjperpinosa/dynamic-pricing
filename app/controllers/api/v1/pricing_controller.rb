@@ -1,7 +1,8 @@
 class Api::V1::PricingController < ApplicationController
-  VALID_PERIODS = %w[Summer Autumn Winter Spring].freeze
-  VALID_HOTELS = %w[FloatingPointResort GitawayHotel RecursionRetreat].freeze
-  VALID_ROOMS = %w[SingletonRoom BooleanTwin RestfulKing].freeze
+  # the valid periods, hotels, and rooms are now defined in PricingInventory
+  VALID_PERIODS = PricingInventory::PERIODS
+  VALID_HOTELS = PricingInventory::HOTELS
+  VALID_ROOMS = PricingInventory::ROOMS
 
   before_action :validate_params
 
@@ -15,7 +16,10 @@ class Api::V1::PricingController < ApplicationController
     if service.valid?
       render json: { rate: service.result }
     else
-      render json: { error: service.errors.join(', ') }, status: :bad_request
+      # if the model is not providing a valid rate, or if the Rate API returned any error, tell the client to retry
+      response.set_header("Retry-After", service.retry_after.to_s)
+      #render json: { error: service.errors.join(', ') }, status: :bad_request
+      render json: {error: service.errors.join(',')}, status: :service_unavailble
     end
   end
 

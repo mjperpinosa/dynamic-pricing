@@ -1,0 +1,3 @@
+class RateCache
+
+end
