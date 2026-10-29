@@ -2,15 +2,9 @@ require "test_helper"
 
 class Api::V1::PricingControllerTest < ActionDispatch::IntegrationTest
   test "should get pricing with all parameters" do
-    mock_body = {
-      'rates' => [
-        { 'period' => 'Summer', 'hotel' => 'FloatingPointResort', 'room' => 'SingletonRoom', 'rate' => '15000' }
-      ]
-    }.to_json
+    rates = PricingInventory::ALL.index_with(15000)
 
-    mock_response = OpenStruct.new(success?: true, body: mock_body)
-
-    RateApiClient.stub(:get_rate, mock_response) do
+    with_rate_api(rates) do
       get api_v1_pricing_url, params: {
         period: "Summer",
         hotel: "FloatingPointResort",
@@ -21,25 +15,27 @@ class Api::V1::PricingControllerTest < ActionDispatch::IntegrationTest
       assert_equal "application/json", @response.media_type
 
       json_response = JSON.parse(@response.body)
-      assert_equal "15000", json_response["rate"]
+      assert_equal 15000, json_response["rate"]
     end
   end
 
   test "should return error when rate API fails" do
-    mock_response = OpenStruct.new(success?: false, body: { 'error' => 'Rate not found' })
+    failing_call = ->(_attributes) { raise RateApiClient::ResponseError, 'unexpected status (HTTP 500): {"error": "Rate not found"}' }
 
-    RateApiClient.stub(:get_rate, mock_response) do
+    with_rate_api(failing_call) do
       get api_v1_pricing_url, params: {
         period: "Summer",
         hotel: "FloatingPointResort",
         room: "SingletonRoom"
       }
 
-      assert_response :bad_request
+      assert_response :service_unavailable
       assert_equal "application/json", @response.media_type
+      assert_equal "5", @response.headers["Retry-After"]
 
       json_response = JSON.parse(@response.body)
-      assert_includes json_response["error"], "Rate not found"
+      assert_includes json_response["error"], "the pricing model returned an error"
+      refute_includes json_response["error"], "Rate not found"
     end
   end
 
@@ -107,5 +103,14 @@ class Api::V1::PricingControllerTest < ActionDispatch::IntegrationTest
 
     json_response = JSON.parse(@response.body)
     assert_includes json_response["error"], "Invalid room"
+  end
+
+  private
+
+  # Each test gets its own empty cache, and RateApiClient.get_rates is stubbed so no test calls the real model.
+  def with_rate_api(response, &block)
+    RateCache.stub(:instance, RateCache.new) do
+      RateApiClient.stub(:get_rates, response, &block)
+    end
   end
 end

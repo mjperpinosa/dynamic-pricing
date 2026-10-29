@@ -19,7 +19,7 @@ class Api::V1::PricingController < ApplicationController
       # if the model is not providing a valid rate, or if the Rate API returned any error, tell the client to retry
       response.set_header("Retry-After", service.retry_after.to_s)
       #render json: { error: service.errors.join(', ') }, status: :bad_request
-      render json: {error: service.errors.join(',')}, status: :service_unavailble
+      render json: {error: service.errors.join(',')}, status: :service_unavailable
     end
   end
 
