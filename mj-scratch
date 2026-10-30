@@ -1,0 +1,2754 @@
+While trying to figure out how much limit the Rate API can handle in one request
+
+100,000 combinations took 3.16s
+
+Bruno results for duplicate Rate API request hotel x period x room combinations:
+
+
+{
+  "rates": [
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 58600,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 54600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 47300,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 74800,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 15700,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 42500,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 33000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 77300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 33900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 51000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 35900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 59200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 74400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 56200,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 67900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 17600,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 12500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 22900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 46000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 66700,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 29200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 61500,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 14600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 33100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 23100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 75000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 65200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 29000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 28600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 13500,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 42400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 10900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 39500,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 20200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 24400,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 21300,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 45100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 30300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 21600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 53500,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 40900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 48500,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 27200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 47700,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 71800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 25700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 64100,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 63600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 46600,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 14900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 13200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 33000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 61300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 26900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 27600,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 24200,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 21400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 17400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 18800,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 57400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 76200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 62300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 56900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 65200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 32100,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 46000,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 21000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 67300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 52200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 46700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 43200,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 46100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 23000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 65900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 37200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 74000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 75000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 34800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 20500,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 53100,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 12900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 24200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 55300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 78800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 62900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 22000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 20000,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 34500,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 24200,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 64200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 76700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 50700,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 39300,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 74700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 77500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 69900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 14100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 25500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 20100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 13200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 71800,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 29100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 78100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 30200,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 26300,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 10100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 57400,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 30100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 12400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 63500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 20200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 48400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 30900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 48600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 53100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 63300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 46800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 31900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 57300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 22400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 73900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 75400,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 21400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 44900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 51000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 53400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 36900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 32900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 40600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 58700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 30600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 22800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 20700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 57700,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 11800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 71900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 21900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 65500,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 48800,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 57900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 26600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 38800,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 76200,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 25400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 28200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 75300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 33300,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 53900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 49100,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 62100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 42800,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 70800,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 75300,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 63800,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 76800,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 46700,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 28700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 30600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 73700,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 50200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 38500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 57900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 25000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 77000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 52800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 73100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 79800,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 61800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 73400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 70800,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 68900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 56600,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 45700,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 67200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 75800,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 71100,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 48400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 21200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 24500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 57600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 36600,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 51500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 17800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 53100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 63300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 25900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 24200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 65000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 17200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 32800,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 78000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 74600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 49800,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 16200,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 71900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 42200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 31900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 47700,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 51000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 56000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 56600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 78700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 28600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 26400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 23000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 38000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 66200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 31000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 57000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 72900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 33700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 65800,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 76700,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 70200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 22500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 17400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 22300,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 73100,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 19100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 31200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 26800,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 50200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 38500,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 26600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 47600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 68400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 18600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 26300,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 36700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 76200,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 62800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 61100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 16700,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 17400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 17900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 19500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 68300,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 29000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 10200,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 45100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 63400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 28500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 71900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 40800,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 36100,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 63800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 75000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 58700,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 64100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 60900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 25900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 70600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 38900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 33500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 28800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 55000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 29800,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 35400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 73300,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 45200,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 60900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 26100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 25200,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 31500,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 37000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 53400,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 61700,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 51000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 78400,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 19600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 46600,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 23600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 49700,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 46100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 45400,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 13300,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 74900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 58700,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 23900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 64000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 76600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 10800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 55500,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 17100,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 32000,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 79800,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 45500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 21400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 27400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 41900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 40800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 79600,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 54900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 65600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 79300,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 13000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 22800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 63900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 50300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 37000,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 74200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 69000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 38300,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 67000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 24800,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 73600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 67200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 20000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 76400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 45400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 48600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 38900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 18300,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 44600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 17800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 27900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 77700,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 11500,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 64200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 58000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 58400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 59000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 41600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 79400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 36300,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 38900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 50100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 29600,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 32000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 41100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 42900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 13000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 33700,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 20700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 10200,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 76800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 49700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 45000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 32000,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 77300,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 11200,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 26000,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 78400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 42800,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 72100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 41000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 51500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 45600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 46400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 61300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 24200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 57400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 31300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 76600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 29400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 23400,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 79200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 75700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 62500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 46000,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 29200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 71900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 38800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 34300,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 77500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 18900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 47100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 37900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 63300,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 67600,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 17600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 44800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 48100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 76800,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 78300,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 55000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 57600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 12700,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 48200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 20800,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 59000,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 51300,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 37100,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 69100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 26900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 29600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 75900,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 21900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 71000,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 52100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 13200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 45400,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 17700,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 40400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 11300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 49300,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 43700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 39100,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 65400,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 11000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 69600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 38300,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 65400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 52100,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 71700,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 51200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 11300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 58600,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 37300,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 52700,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 52800,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 52000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 22300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 58700,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 58700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 35800,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 52200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 56400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 62900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 34700,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 36200,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 23100,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 10200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 73900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 28700,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Spring",
+      "rate": 53200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 25000,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 54500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Spring",
+      "rate": 56500,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 36400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 73600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Spring",
+      "rate": 51000,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 42400,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 18500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Summer",
+      "rate": 53200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 55700,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 52200,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Summer",
+      "rate": 76500,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 61300,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 33100,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Summer",
+      "rate": 19000,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 79100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 53900,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Autumn",
+      "rate": 44700,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 24100,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 79600,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Autumn",
+      "rate": 14000,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 35600,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 56500,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Autumn",
+      "rate": 22100,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 16500,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 21400,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "FloatingPointResort",
+      "period": "Winter",
+      "rate": 25200,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 22900,
+      "room": "SingletonRoom"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 10300,
+      "room": "BooleanTwin"
+    },
+    {
+      "hotel": "GitawayHotel",
+      "period": "Winter",
+      "rate": 58700,
+      "room": "RestfulKing"
+    },
+    {
+      "hotel": "RecursionRetreat",
+      "period": "Winter",
+      "rate": 28200,
+      "room": "SingletonRoom"
+    },
+    ....
+  ]
+}

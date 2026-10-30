@@ -1,0 +1,128 @@
+- To pull and run the Rate API
+docker pull tripladev/rate-api
+docker run -p 8080:8080 tripladev/rate-api
+
+
+
+- limits of the Rate API
+    - 1000 requests/day
+    - is there limit in how many combinations I can pass?
+        - I can check on the actual Rate API to see its limitations on the accepted number of elements in array request
+
+- 
+
+Decisions
+> Using in-process memory for caching
+    Alternatives but I'm not using: 
+        - ruby on rails' built in caching - less freedom to manipulate e.g. expiration starts when it was written
+        - redis - overkill for the given use case/amount of data. but if the application will be deployed with multiple of pods, then I will switch to using redis
+        - related to redis, also considered having a background process/job that will refresh redis content every like 4.5 mins so that data are always servable. But this approach requires a separate job/application to maintain which I think is overkill for this scale of requirement
+
+> caching/calling all combinations of hotelx room x period at once (basically a batch call since it's just 36 combinations!)
+
+
+Reasons are: so that I can manipulate the cache freely e.g. how long it will live (deciding on the starting time), when to refresh it, which process can do the refresh.
+
+> Retry mechanism with circuit breaker
+
+> Will use token bucket for limiting or throttling the outbound requests so that 1000 requests/day will be distributed through out the day
+
+> for this simple service which requires at least 10krequests/day, auto scaling/ or more than 1 pod deployment could be an overkill, so the design I'm considering for caching and rate limiting is only for one process only (if multiple pods deployment would be required, I can share my design changes during interview to adapt to this scenario)
+
+>
+
+More advanced considerations (especially for multiple services need to talk to each other)
+The Rate API (model) and the client API can communicate via gRPC for more efficient internal-to-internal communication.
+
+
+Prompt for the coding tool to implement the tech decisions
+
+Note: run everything through docker compose
+
+Requirements: GET /api/v1/pricing should return rates that are not older than 5 min, and handles 10k+ requests/day. The pricing model, POST /pricing on tripladev/rate-api, allows only up to 1,000 calls/day per token. Let's count every call, failed or not!
+
+You should implement the requirements with below decisions (don't come up with your own).
+I already created two files in lib folder, tthe rate_cache.rb and token_bucket.rb where you need to put the appropriate logic for caching and token bucket. Modify the existing files as required especially the pricing_service.rb and rate_api_client.rb. The service should also have a retry_after that is accessible as I already assumed it in the pricing_controller.
+
+Decisions:
+Caching
+- Fetch all 36 period x hotel x room combinations in one batch call only (the model's
+  POST /pricing takes an attributes array) and cached them in memory
+- RateCache (app/services, one instance per process) holds one immutable snapshot:
+  all 36 rates plus fetched_at. Don't use Rails.cache!
+- fetched_at = monotonic time when the call to the RateAPI model request started. Never serve a snapshot that's >= 5 mins old.
+- From around 4.5 mins, the next request should refreshes the snapshot. In case the request fails, serve the old snapshot as long as it's <= 5 mins old.
+- During refresh or call to the model, only one request should be allowed at a time since it already refreshes the entire snapshot of rates. Before any call to the model, should always check if the snapshot is fresh, because when it was already refreshed, the queued requests to the model are no longer necessary, they can already take the data from the cache (always check if data is fresh meaning <= 5 mins old.)
+
+Failures
+- The model isn't reliable, it can be slow or hanging, could return 5xx, or return 200 with an error body or without rates, and the rate can be a number or a string. Thee API should be able to handle all of these situations.
+- If a call fails, retry once right away. Don't retry on 429 (too many requests) because this means that the quota is already used up!
+- If it still fails, don't call the model again for 5 seconds (60 secs after a 429).
+  Just return 503 during that time, a simple circuit breaker without the half-open
+  state.
+
+Daily budget implement in token_bucket.rb file
+- Implement a simple token bucket as our safety net so we never use up the model's daily quota, even if their is model's RateAPI outage or there's a bug in the retries.
+- Make sure to make it thread-safe
+- Normal traffic only needs around 400-500 calls a day, so it should only kick in
+  when the model is down for a long time.
+- When token bucket is empty, don't call the model. Return 503 with Retry-After = when the next token comes in, and use that as the cooldown too.
+- Make sure to put logging like "budget exhausted", etc.
+
+rate_api_client.rb
+- Keep the existing class. Change get_rate to get_rates(attributes), which sends all
+  the combinations in one POST /pricing RateAPI.
+- Make sure to implement timeouts in case the RateAPI has very delayed response
+- In case of erros, put the HTTP status and the first part of the body in the error message for the logs. Don't show it to our client users.
+- The whole response is a failure if:
+  - the status isn't 2xx
+  - the body isn't JSON (an HTML error page for example)
+  - there's no "rates" array (or like a 200 with {"status": "error", ...})
+  - any combination we asked for is missing or has an invalid rate
+  We only want complete data in the cache. Ignore extra entries we didn't ask for.
+- Return a map of combination -> rate as an integer. Make sure to hadle it in case the model return an inconsistent type for the rate, e.g. 1000 or "1000". Let's reject negative values, decimals, empty or non-numeric strings, and null.
+
+API 
+- If we can't get a valid rate because of the model, the service should set retry_after
+  and adds a message to errors, something like "Pricing is temporarily unavailable:
+  the pricing model did not respond in time. Please retry in xxx seconds." The controller should returns 503 with Retry-After.
+- The message should say what happened in plain words: didn't respond in time,
+  returned an error, daily quota used up, or limiting/throttled. Make sure to not pass the model's response to client users.
+- Make sure to have one JSON log line per call to the model: outcome, attempt, duration, error, tokens left, etc.
+
+Others
+- Don't remove even if there are unused parts of the project setup (database config etc.). I will review them myself and take action
+
+Tests
+- Use the existing test setup. But make sure to use a mocking so that the tests won't make a real call/requests sp that tests won't use the quota!
+- For client, test the success, string to integer, all the failure cases, timeout,
+  connection refused.
+- For cache, use a fake clock and a fake client that each test can control/manipulate per call.
+  Test the following scenarious:
+  - freshness, with the age counted from the request start
+  - the early refresh, and serving the old snapshot when it fails
+  - retry, cooldown, and 429
+  - the budget and the logs
+- With real threads, you should test that only one call goes to the model when lots of requests come at the same time, and that requests don't wait during the early refresh. Use
+  timeouts so a broken implementation fails the test instead of hanging.
+- Simulate a whole day for example 10k+ requests and some of the model calls failing. Should be <= 1000 calls, no rate 5 mins old or more is served, etc. Also simulate the model being down the whole day, it should never go over the budget.
+- Test the controller end to end through the real client.
+- Then break each rule on purpose, one by one, and check that a test fails.
+
+After that, test with the real rate-api container:
+- A few minutes of load, count the model calls in the logs and check that it
+  refreshes around 4.5 mins.
+- Stop rate-api, then a 503 Retry-After should be returned. Start it again and it should
+  recover.
+
+
+
+Observations when testing the RateAPI
+- it returns duplicated entries. I sent attributes with duplicate combinations of period x hotel x room, it returns the same duplicate combination but with different rate
+
+
+Known limits:
+  - the cache is per process
+  - restarts refill the budget burst
+  - the first request returns 503 if the model fails
+  - the catalog is hard-coded
